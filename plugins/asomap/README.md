@@ -1,7 +1,7 @@
 # ASOMap for Claude Code
 
 Connects your [ASOMap](https://asomap.com) workspace to Claude Code — keyword ranks in the
-App Store, Google Play and RuStore — and adds seven ASO workflows that run on your real data.
+App Store, Google Play and RuStore — and adds eight ASO workflows that run on your real data.
 
 ## Install
 
@@ -27,10 +27,12 @@ Ask in your own words, or name the workflow:
 | `listing-for-keywords` | "Rewrite my subtitle and keyword field for my keywords" |
 | `release` | "Translate these release notes into every language", "make screenshots" |
 | `weekly-brief` | "Weekly ASO brief for the team" |
+| `reply-to-reviews` | "Answer my unanswered 1–2 star reviews" |
 
 Workflows read your data freely. Anything that changes your workspace (tracking keywords or
 competitors, saving a listing draft, release notes or a screenshot set) is proposed first and
-done only when you agree. Nothing is ever published to a store.
+done only when you agree. The one thing that reaches a store is a reply to a review, and only
+the exact text you approved; nothing else is ever published.
 
 ## Links
 

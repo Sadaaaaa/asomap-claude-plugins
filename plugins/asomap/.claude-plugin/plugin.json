@@ -1,8 +1,8 @@
 {
   "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
   "name": "asomap",
-  "version": "1.7.0",
-  "description": "ASOMap for Claude Code: connects your ASOMap workspace (App Store, Google Play, RuStore ranks) and adds seven ASO workflows that run on your real data.",
+  "version": "1.8.0",
+  "description": "ASOMap for Claude Code: connects your ASOMap workspace (App Store, Google Play, RuStore ranks) and adds eight ASO workflows that run on your real data.",
   "author": {
     "name": "ASOMap",
     "email": "support@asomap.com",
