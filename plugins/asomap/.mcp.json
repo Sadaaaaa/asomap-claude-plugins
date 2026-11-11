@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "asomap": {
+      "type": "http",
+      "url": "https://asomap.com/mcp"
+    }
+  }
+}
