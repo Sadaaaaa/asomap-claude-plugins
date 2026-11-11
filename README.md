@@ -2,7 +2,7 @@
 
 A Claude Code plugin marketplace with one plugin, **asomap**: it connects your
 [ASOMap](https://asomap.com) workspace — daily keyword ranks in the App Store, Google Play
-and RuStore — and adds six ASO workflows that run on your real data.
+and RuStore — and adds seven ASO workflows that run on your real data.
 
 ```
 /plugin marketplace add Sadaaaaa/asomap-claude-plugins

@@ -9,7 +9,7 @@
     {
       "name": "asomap",
       "source": "./plugins/asomap",
-      "description": "Connects ASOMap and adds six ASO workflows: app review, beat a competitor, new keywords, listing for your keywords, release notes and screenshots, weekly brief.",
+      "description": "Connects ASOMap and adds seven ASO workflows: app review, beat a competitor, new keywords, new markets, listing for your keywords, release notes and screenshots, weekly brief.",
       "category": "productivity",
       "homepage": "https://asomap.com/mcp-docs"
     }
