@@ -11,10 +11,11 @@ Build a short list of keywords worth tracking for one app in one store and count
 
 1. **Pick the app and the market.** `myApps` for the app (ask if unclear). The country is the one the person named, else the app's main storefront. RuStore is always `ru`.
 2. **What is already tracked.** `listKeywords` for the store and country, so nothing already tracked is suggested again. The reply is paged: if `nextOffset` isn't null, fetch the next pages with `offset` until you have them all.
-3. **Gather candidates** from three sources:
+3. **Gather candidates** from four sources:
    - `opportunities` — winnable keywords (high demand, low competition) not tracked yet;
    - `discover` — keywords seen in the daily collection, ranked by demand;
    - `suggestKeywords` — the store's live autocomplete for 2–4 seed words. Take the seeds from the app's category and from its best tracked keywords; ask the person for seeds if the app is new.
+   - `combineKeywords` (App Store, Google Play) — 2–10 seed words describing the app's features, combined into phrases and priced from autocomplete; keep the ones with `suggested: true`. One store request per seed, so use it once with a good seed list rather than many times.
 4. **Filter.** Drop candidates that are already tracked, that are competitors' brand names, or that don't describe what the app does (read the app's listing with `appDetail` if you aren't sure what it does).
 
 ## What to write
