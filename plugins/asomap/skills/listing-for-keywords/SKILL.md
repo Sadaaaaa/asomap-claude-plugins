@@ -21,6 +21,8 @@ Write a listing that covers the app's most valuable tracked keywords, prove it s
    - **RuStore:** title ≤ 50, short description ≤ 80, full description ≤ 4000, indexed like Google Play.
 
    Put the highest-opportunity keywords in the strongest fields (name, then subtitle or short description). Keep the brand name. Write in the listing's language, in a voice that reads well to a person.
+
+   **App Store, keywords that didn't fit:** call `indexedLocales` for the storefront and the app. The storefront also searches the title, subtitle and keyword field of its additional localizations (the US reads ten), so a localization with status `base` (most likely empty) is up to 160 more characters for this storefront's keywords. Two rules: a phrase only counts when it sits whole inside one localization, and that localization is also what the person's customers see in its own market (`home`) and is read in `indexedIn` other storefronts. Offer it as an option rather than doing it, and never put another market's words into a localization with status `own`.
 4. **Prove it.** Call `scoreListing` with the new fields. If the score isn't higher than the current one, revise once and score again. Show both numbers.
 5. **Save.** Ask before saving, then `saveListingDraft` with the new fields. It appears in ASOMap's Listing helper for this app and locale, ready to copy into the store console. It doesn't publish anything to the store.
 
@@ -31,3 +33,4 @@ Answer in the person's language:
 - The new listing, field by field, with each field's length against its limit.
 - Score: current → new, and which important keywords are now covered.
 - Anything you chose to leave out and why (for example a keyword that didn't fit the subtitle).
+- App Store: the empty indexed localizations that could carry the keywords that didn't fit, if any.
