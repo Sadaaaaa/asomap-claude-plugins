@@ -18,7 +18,8 @@ Find where a competitor wins on keywords the person cares about, and turn that i
    - `compare` — positions of both apps on every tracked keyword, plus rating and downloads;
    - `competitorGaps` — keywords where the competitor is in the top 100 and the app is behind or not ranked, with the gap.
 4. **Why they win.** Call `appDetail` for the competitor to read its title, subtitle or short description and description. Note which gap keywords appear in their metadata and not in the app's (`metadataCheck` for the app).
-5. **What they changed lately.** `listChanges` for the app (competitors are included) for the last 90 days: a rename, a new subtitle or description, new screenshots or a release right before they climbed is often the real reason. Match the dates against the gaps.
+5. **Category standing.** `categoryRanks` for the app: where both stand in their category's free and grossing top 100 and how it moved this week. A rival far up the category chart wins on downloads, not only on keywords; say so.
+6. **What they changed lately.** `listChanges` for the app (competitors are included) for the last 90 days: a rename, a new subtitle or description, new screenshots or a release right before they climbed is often the real reason. Match the dates against the gaps.
 
 ## What to write
 

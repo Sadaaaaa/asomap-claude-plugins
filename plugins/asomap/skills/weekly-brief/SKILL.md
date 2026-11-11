@@ -15,7 +15,8 @@ A brief the person can read in a minute or paste into a team chat.
    - `movers` with `window: "week"` — the biggest climbs and drops;
    - `opportunities` with `limit: 5` — new winnable keywords not tracked yet.
 4. **Listing changes:** `listChanges` for each app with `days: 7` — what the person and their competitors changed in the stores this week.
-5. **New reviews worth a look:** `listReviews` for each app with `maxRating: 2` and `limit: 10`; keep only reviews from the last week.
+5. **Category charts:** `categoryRanks` for each app — today's place in its category's top 100 against a week ago; skip apps that aren't in it.
+6. **New reviews worth a look:** `listReviews` for each app with `maxRating: 2` and `limit: 10`; keep only reviews from the last week.
 
 ## What to write
 
@@ -26,6 +27,7 @@ ASO brief, <date range>
 
 <App> · <store>
 Top 10: N (±n vs last week) · Top 50: N · Not ranked: N
+Category: #N in <category> free (±n)
 ▲ <keyword> 18 → 7 · <keyword> 25 → 14
 ▼ <keyword> 4 → 12
 New chances: <keyword>, <keyword>
