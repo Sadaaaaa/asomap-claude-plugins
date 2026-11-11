@@ -18,6 +18,7 @@ Find where a competitor wins on keywords the person cares about, and turn that i
    - `compare` — positions of both apps on every tracked keyword, plus rating and downloads;
    - `competitorGaps` — keywords where the competitor is in the top 100 and the app is behind or not ranked, with the gap.
 4. **Why they win.** Call `appDetail` for the competitor to read its title, subtitle or short description and description. Note which gap keywords appear in their metadata and not in the app's (`metadataCheck` for the app).
+5. **What they changed lately.** `listChanges` for the app (competitors are included) for the last 90 days: a rename, a new subtitle or description, new screenshots or a release right before they climbed is often the real reason. Match the dates against the gaps.
 
 ## What to write
 
@@ -25,7 +26,7 @@ Answer in the person's language:
 
 - **Score** — on how many tracked keywords each app is ahead.
 - **Biggest gaps** — up to ten keywords, sorted by demand × gap: keyword, their position, the app's position.
-- **Why** — for each of the top gaps, whether the keyword is in the competitor's title or description and missing from the app's. Say plainly when the reason isn't visible in the metadata (it may be ratings, downloads or history).
+- **Why** — for each of the top gaps, whether the keyword is in the competitor's title or description and missing from the app's. Add any recent listing change of theirs that lines up with the climb, with its date. Say plainly when the reason isn't visible in the metadata or the change history (it may be ratings, downloads or age).
 - **What to change** — concrete edits to the app's title, subtitle or keyword field that cover the gaps, within the store's character limits. Check a proposed version with `scoreListing` before suggesting it and quote the score change.
 
 Don't copy the competitor's wording; use the keywords, write the app's own text.
