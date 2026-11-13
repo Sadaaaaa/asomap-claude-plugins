@@ -13,6 +13,7 @@ A brief the person can read in a minute or paste into a team chat.
 2. **Across all apps:** `asoSummary` — per store, the app, how many keywords are in the top 10, top 50, beyond, not ranked.
 3. **Per store and main country:**
    - `movers` with `window: "week"` — the biggest climbs and drops;
+   - `intentVisibility` for the app — top 10 by query type against a month ago; mention a type that gained or lost two or more;
    - `opportunities` with `limit: 5` — new winnable keywords not tracked yet.
 4. **Listing changes:** `listChanges` for each app with `days: 7` — what the person and their competitors changed in the stores this week.
 5. **Category charts:** `categoryRanks` for each app — today's place in its category's top 100 against a week ago; skip apps that aren't in it.

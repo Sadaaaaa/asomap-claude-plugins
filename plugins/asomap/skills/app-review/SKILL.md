@@ -14,7 +14,8 @@ A short, decision-ready review of one of the person's apps, built only from thei
 3. **Overall picture.** Call `asoSummary`, then for the app's store and its main country call:
    - `movers` with `window: "week"` — what climbed and what dropped;
    - `recommendations` — missing high-demand keywords, near-top-10 keywords, recent drops;
-   - `metadataCheck` — which tracked keywords are in the title and description.
+   - `metadataCheck` — which tracked keywords are in the title and description, and its `policy` list: store rules the live listing breaks (report every `error`);
+   - `intentVisibility` — tracked keywords by query type (function, problem, format, object, brand, condition) and how many of each are in the top 10 against a month ago. Name the type the app is weakest in where it has demand: problem, format and object queries usually bring the most installs.
 4. **If the app has competitors** (`listCompetitors`), call `competitorGaps` and keep the three biggest gaps.
 
 ## What to write

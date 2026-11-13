@@ -20,6 +20,7 @@ Find where a competitor wins on keywords the person cares about, and turn that i
 4. **Why they win.** Call `appDetail` for the competitor to read its title, subtitle or short description and description. Note which gap keywords appear in their metadata and not in the app's (`metadataCheck` for the app).
 5. **Category standing.** `categoryRanks` for the app: where both stand in their category's free and grossing top 100 and how it moved this week. A rival far up the category chart wins on downloads, not only on keywords; say so.
 6. **What they changed lately.** `listChanges` for the app (competitors are included) for the last 90 days: a rename, a new subtitle or description, new screenshots or a release right before they climbed is often the real reason. Match the dates against the gaps.
+7. **What their users complain about.** `reviewComplaints` for the app: each topic's share of reviews for the app and the competitor, with an example. Its `arguments` are topics the competitors are blamed for far more often (ads, a paywall, a weekly subscription): if the app really doesn't have the problem, that is a line for the subtitle or the second screenshot.
 
 ## What to write
 
@@ -28,6 +29,7 @@ Answer in the person's language:
 - **Score** — on how many tracked keywords each app is ahead.
 - **Biggest gaps** — up to ten keywords, sorted by demand × gap: keyword, their position, the app's position.
 - **Why** — for each of the top gaps, whether the keyword is in the competitor's title or description and missing from the app's. Add any recent listing change of theirs that lines up with the climb, with its date. Say plainly when the reason isn't visible in the metadata or the change history (it may be ratings, downloads or age).
+- **Their weak spot** — the topics from `reviewComplaints` where the competitor is complained about much more than the app, with one short quote each, and how the app can say it doesn't have the problem (only if true).
 - **What to change** — concrete edits to the app's title, subtitle or keyword field that cover the gaps, within the store's character limits. Check a proposed version with `scoreListing` before suggesting it and quote the score change.
 
 Don't copy the competitor's wording; use the keywords, write the app's own text.
