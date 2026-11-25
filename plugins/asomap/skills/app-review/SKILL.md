@@ -16,12 +16,14 @@ A short, decision-ready review of one of the person's apps, built only from thei
    - `recommendations` — missing high-demand keywords, near-top-10 keywords, recent drops;
    - `metadataCheck` — which tracked keywords are in the title and description, and its `policy` list: store rules the live listing breaks (report every `error`);
    - `intentVisibility` — tracked keywords by query type (function, problem, format, object, brand, condition) and how many of each are in the top 10 against a month ago. Name the type the app is weakest in where it has demand: problem, format and object queries usually bring the most installs.
-4. **If the app has competitors** (`listCompetitors`), call `competitorGaps` and keep the three biggest gaps.
+4. **App Store apps: lost translations.** Call `lostTranslations`. Storefronts with `restoredAt: null` show the main-language listing instead of the app's translation right now, so the app's keywords in that language don't work there.
+5. **If the app has competitors** (`listCompetitors`), call `competitorGaps` and keep the three biggest gaps.
 
 ## What to write
 
 Answer in the person's language. Keep it to one screen:
 
+- **Lost translations first, if any** — e.g. "Germany (German), France (French): the App Store shows the main-language listing instead of your translation since Nov 24". Say what to do: in App Store Connect check the languages under App Information and in the current version, fill in what's missing and submit again. Translations that came back go in one short line, or nowhere.
 - **The state in one line** — e.g. "12 of 80 keywords in the top 10, 5 dropped this week".
 - **Dropped this week** — the keywords with the biggest falls, with old → new position. Only real drops; skip keywords that are not ranked at all.
 - **Close to the top 10** — positions 11–20 with good demand: the cheapest wins.

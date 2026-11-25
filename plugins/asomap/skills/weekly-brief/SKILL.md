@@ -16,8 +16,9 @@ A brief the person can read in a minute or paste into a team chat.
    - `intentVisibility` for the app — top 10 by query type against a month ago; mention a type that gained or lost two or more;
    - `opportunities` with `limit: 5` — new winnable keywords not tracked yet.
 4. **Listing changes:** `listChanges` for each app with `days: 7` — what the person and their competitors changed in the stores this week.
-5. **Category charts:** `categoryRanks` for each app — today's place in its category's top 100 against a week ago; skip apps that aren't in it.
-6. **New reviews worth a look:** `listReviews` for each app with `maxRating: 2` and `limit: 10`; keep only reviews from the last week.
+5. **Lost translations:** `lostTranslations` for each App Store app — storefronts still showing the main-language listing instead of the translation.
+6. **Category charts:** `categoryRanks` for each app — today's place in its category's top 100 against a week ago; skip apps that aren't in it.
+7. **New reviews worth a look:** `listReviews` for each app with `maxRating: 2` and `limit: 10`; keep only reviews from the last week.
 
 ## What to write
 
@@ -32,6 +33,7 @@ Category: #N in <category> free (±n)
 ▲ <keyword> 18 → 7 · <keyword> 25 → 14
 ▼ <keyword> 4 → 12
 New chances: <keyword>, <keyword>
+Lost translation: Germany (German) since Nov 24 — fix in App Store Connect
 Changed: <competitor> renamed to "<new name>" (Tue) · <competitor> new screenshots
 Low reviews: 2 this week — "<short quote>"
 
@@ -40,4 +42,5 @@ Do this week: <one action>
 
 - One block per app and store; skip stores where nothing moved.
 - Positions and counts come from the tools; if the week-ago number isn't available, leave out the "±".
+- A still-lost translation is the "Do this week" action unless something bigger broke: every keyword in that language is dead in that country until it's fixed.
 - "Do this week" is one concrete action for the whole portfolio, the one with the most impact.

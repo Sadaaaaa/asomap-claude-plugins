@@ -26,6 +26,10 @@ The translations appear on ASOMap's Changelog page: per language, and for Google
 3. **Write the captions** in every language the listing has (see step A.3), short and benefit-first, one idea per screen.
 4. **Create the set** with `createScreenshotSet`. It shows up on ASOMap's Screenshots page, where the person can edit it and export every store size.
 
+## C. After the update is live (App Store)
+
+App Store Connect sometimes drops localizations when a version is released, and those countries fall back to the main-language listing. ASOMap checks twice a day and emails the owner, but when the person says the update is out, call `lostTranslations` for the app: if a storefront there has `restoredAt: null`, say which countries and languages, and that the fix is to check the languages under App Information and in the version in App Store Connect, fill in what's missing and submit again. A translation counts as lost after two checks in a row, so a loss can show up to a day after release; offer to check again tomorrow.
+
 ## What to write
 
 Answer in the person's language: what was saved, for which languages or sizes, and where in ASOMap to find it.
